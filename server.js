@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-app.use(express.json());
+app.use(express.json()); // middleware = 
 const PORT = 3300; 
 
 
@@ -31,6 +31,7 @@ let legacyProducts = [
   }
 ];
 
+// implementasi endpoint
 // get
 app.get('/products', (req, res) => {
     res.json(legacyProducts);
