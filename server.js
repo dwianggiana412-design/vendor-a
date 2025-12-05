@@ -31,7 +31,7 @@ let legacyProducts = [
   }
 ];
 
-// Endpoint get
+// get
 app.get('/products', (req, res) => {
     res.json(legacyProducts);
 });
